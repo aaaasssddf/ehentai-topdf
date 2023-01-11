@@ -12,10 +12,11 @@ zipfiles=os.listdir(os.getcwd()+"\\zips")
 temppath=os.getcwd()+"\\temp"
 #解压文件夹
 for file in zipfiles:
-    print(file)
-    out=zipfile.ZipFile(os.getcwd()+"\\zips\\"+str(file),"r")
-    out.extractall(temppath+"\\"+str(file).replace(".zip",""))
-    out.close()
+    if file.endswith(".zip")
+        print(file)
+        out=zipfile.ZipFile(os.getcwd()+"\\zips\\"+str(file),"r")
+        out.extractall(temppath+"\\"+str(file).replace(".zip",""))
+        out.close()
     
     
 temps=os.listdir(os.getcwd()+"\\temp")
